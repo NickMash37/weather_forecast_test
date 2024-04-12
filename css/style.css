@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 800px;
+  height: 300px;
+  margin: 4em auto;
+  background-color: cadetblue;
+}
+
+.weather {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.weather__city {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2em;
+}
+.weather__temp {
+  width: 70px;
+  height: 70px;
+  background-color: antiquewhite;
+  border-radius: 50%;
+  padding-top: 20px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+.weather__forecast {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.weather__choose {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.weather__choose input {
+  border: none;
+  outline: none;
+  font-size: 1.2em;
+  border-radius: 10px;
+  padding: 10px;
+}
+.weather__choose button {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.3em;
+  background-color: black;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
