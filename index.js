@@ -4,9 +4,9 @@ const temp = document.querySelector(".weather__temp");
 const icon = document.querySelector('.weather__icon')
 const input = document.querySelector(".weather__choose-input");
 const btn = document.querySelector(".weather__choose-btn");
-let cityName;
 
 input.addEventListener("change", () => {
+  let cityName;
   cityName = input.value;
   fetch(
     `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=5&&appid=042c374a23c6008862fcbc42a98c7651`
