@@ -15,12 +15,12 @@ input.addEventListener("change", () => {
     .then((data) => {
       let lat = data[0].lat
       let lon = data[0].lon
+      console.log(data)
       fetch(
         `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=042c374a23c6008862fcbc42a98c7651`
       )
         .then((resp) => resp.json())
         .then((data) => {
-            console.log(data)
             lat = data.coord.lat
             lon = data.coord.lon
             city.innerHTML = data.name
